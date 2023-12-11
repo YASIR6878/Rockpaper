@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Rock Game</title>
+</head>
+<body>
+    
+    <p class="title">Rock Paper Scissor</p>
+    <p class="print"></p>
+    <div class="info">
+    <p><pre> <img src="https://cdn4.iconfinder.com/data/icons/people-avatar-1-2/512/7-512.png" alt="" style="width: 35px;">                <img src="http://icons.iconarchive.com/icons/diversity-avatars/avatars/1024/robot-01-icon.png" alt="" style="width: 35px;"></pre></p>
+    </div>
+    <div class="buttonimage">
+        <button onclick="playermove('rock')" class="imgbtn"><img class="btnimg" src="images/rock.png" alt=""></button>
+        <button onclick="playermove('paper')" class="imgbtn"><img class="btnimg" src="images/paper.png" alt=""></button>
+        <button onclick="playermove('scissor')" class="imgbtn"><img class="btnimg" src="images/scissor.png" alt=""></button>
+        </div>
+    <div class="totalresult">
+    <p class="score"></p>
+    <p class="result"></p>
+    <button onclick="resetScore()" class="reset">Reset</button>
+    <button onclick="playmusic()"class="reset">Start</button>
+    <button onclick="autoplay()" class="reset">Auto/Stop</button>
+    <button id="pop" class="reset">Help</button>
+</div>
+<audio id="myAudio" src="music.mp3"></audio>
+    
+<div id="instruction" class="modal">
+    <div class="modal-content">
+        <h3>Instructions</h3>
+        <p>1.Click on start button to start the game.</p>
+        <p>2.Click on the images to play the game or you can also keydown r/R for rock, p/P for paper and s/S for Scissor.</p>
+        <button id="closepop" class="reset">Close</button>
+    </div>
+</div>
+
+    
+    
+    
+</body>
+</html>
