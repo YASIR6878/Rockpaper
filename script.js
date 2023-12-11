@@ -116,16 +116,4 @@
     }
 
     })
-    var openModalButton = document.getElementById('pop');
-        var closeModalButton = document.getElementById('closepop');
-        var modal = document.getElementById('instruction');
-        
-        // When the Open Pop-up button is clicked, display the modal
-        openModalButton.addEventListener('click', function() {
-            modal.style.display = 'block';
-        });
-        
-        // When the Close button is clicked, hide the modal
-        closeModalButton.addEventListener('click', function() {
-            modal.style.display = 'none';
-        });
+  
